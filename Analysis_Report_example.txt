@@ -1,0 +1,174 @@
+======================================================================
+APPLE HEALTH SLEEP & PHYSIOLOGY ANALYSIS REPORT
+Generated: xx-xx-xx xx:xx:xx
+--- SECTION 1: DATA OVERVIEW ---
+
+Heart Rate records : xx
+HRV (SDNN) records : xx
+SpO2 records : xx
+Sleep stage fragments : xx
+
+Date range : xx-xx-xx to xx-xx-xx
+Span : xx days (xx years)
+
+--- SECTION 2: DESCRIPTIVE STATISTICS ---
+
+HRV:
+N = xx
+Mean (SD) = xx (xx)
+Median = xx
+IQR = [xx, xx]
+Outlier fence = [xx, xx]
+Outliers = xx (xx%)
+
+Heart Rate:
+N = xx
+Mean (SD) = xx (xx)
+Median = xx
+IQR = [xx, xx]
+Outlier fence = [xx, xx]
+Outliers = xx (xx%)
+
+SpO2:
+N = xx
+Mean (SD) = xx (xx)
+Median = xx
+IQR = [xx, xx]
+Outlier fence = [xx, xx]
+Outliers = xx (xx%)
+
+--- SECTION 3: SLEEP SESSIONS ---
+
+Valid nights : xx
+Mean duration : xx h (SD = xx)
+Min / Max : xx h / xx h
+
+--- SECTION 4: PHYSIOLOGY BY SLEEP STAGE ---
+
+Heart Rate (bpm):
+Stage N Mean SD Median
+Awake xx xx xx xx
+REM xx xx xx xx
+Core xx xx xx xx
+Deep xx xx xx xx
+Kruskal-Wallis: H = xx, p < .001
+
+HRV SDNN (ms):
+Stage N Mean SD Median
+Awake xx xx xx xx
+REM xx xx xx xx
+Core xx xx xx xx
+Deep xx xx xx xx
+Kruskal-Wallis: H = xx, p < .001
+
+--- SECTION 5: PAIRWISE EFFECT SIZES (Cohen's d) ---
+
+HR:
+Awake vs REM : d = xx
+Awake vs Core : d = xx
+Awake vs Deep : d = xx
+REM vs Core : d = xx
+REM vs Deep : d = xx
+Core vs Deep : d = xx
+
+HRV:
+Awake vs REM : d = xx
+Awake vs Core : d = xx
+Awake vs Deep : d = xx
+REM vs Core : d = xx
+REM vs Deep : d = xx
+Core vs Deep : d = xx
+
+--- SECTION 6: STAGE TRANSITION DYNAMICS ---
+
+Heart Rate:
+Transition Before After Delta
+Awake -> Core xx xx xx
+Awake -> REM xx xx xx
+Core -> Awake xx xx xx
+Core -> Deep xx xx xx
+Core -> REM xx xx xx
+Deep -> Awake xx xx xx
+Deep -> Core xx xx xx
+REM -> Awake xx xx xx
+REM -> Core xx xx xx
+
+HRV:
+Transition Before After Delta
+Awake -> Core xx xx xx
+Awake -> REM xx xx xx
+Core -> Awake xx xx xx
+Core -> Deep xx xx xx
+Core -> REM xx xx xx
+Deep -> Awake xx xx xx
+Deep -> Core xx xx xx
+REM -> Awake xx xx xx
+REM -> Core xx xx xx
+
+--- SECTION 7: HR <-> HRV CORRELATION ---
+
+Pearson r = xx, p < .001, N = xx
+
+--- FIGURE INDEX ---
+
+Figure 1. Total extracted records by data type.
+File: Figure_xx_Record_Counts.png
+
+Figure 2. Daily record density over time, showing data collection continuity.
+File: Figure_xx_Temporal_Coverage.png
+
+Figure 3. Raw value distributions with IQR outlier fences.
+File: Figure_xx_Distributions.png
+
+Figure 4. Sleep session merge diagnostics.
+File: Figure_xx_Sleep_Merge.png
+
+Figure 5. Multi-channel sleep physiology regression (Mean +/- SEM, xx-min bins).
+File: Figure_xx_Sleep_Regression.png
+
+Figure 6. HR vs HRV correlation with linear regression.
+File: Figure_xx_HR_HRV_Correlation.png
+
+Figure 7. HRV circadian rhythm (24-hour profile, Mean +/- SEM).
+File: Figure_xx_HRV_24h_Rhythm.png
+
+Figure 8. HRV by day of week (Mean +/- SEM).
+File: Figure_xx_HRV_Weekly_Rhythm.png
+
+Figure 9. HRV by month of year (Mean +/- SEM).
+File: Figure_xx_HRV_Monthly_Rhythm.png
+
+Figure 10. HR and HRV distribution by sleep stage (Awake/REM/Core/Deep).
+File: Figure_xx_Stage_Boxplot.png
+
+Figure 11. HR and HRV distribution shape by sleep stage (violin plot).
+File: Figure_xx_Stage_Violin.png
+
+Figure 12. Mean physiological change at sleep stage transitions.
+File: Figure_xx_Transition_Heatmap.png
+
+Figure 13. HR and HRV trajectory around stage transitions (+/- SEM).
+File: Figure_xx_Transition_Timecourse.png
+
+Figure 14. Single-night hypnogram with HR and HRV overlay (xx-xx-xx).
+File: Figure_xx_Hypnogram_xx-xx-xx.png
+
+Figure 15. Sleep stage proportion across the night (stacked area).
+File: Figure_xx_Stage_Proportion.png
+
+--- PROCESSING METHODS ---
+
+XML parsing : Streaming (iterparse), memory-safe for large files
+Sleep merge gap : xx hours
+Min sleep duration : xx hours
+HR<->HRV alignment : pd.merge_asof, +/-xx min tolerance
+Regression bins : xx hours (xx min)
+Tail cutoff : < xx% of peak bin count
+Smoothing : Rolling mean, window=xx, centered
+Transition window : +/-xx min around boundary
+APA compliance : No top/right spines, no grid, greyscale only,
+Arial font, xx DPI, shaded SEM bands
+
+======================================================================
+END OF REPORT
+======================================================================
