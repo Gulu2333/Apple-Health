@@ -1,10 +1,3 @@
-<h2>Overview</h2>
-<p>
-  This script analyzes an Apple Health <code>export.xml</code> file ...
-</p>
-
-<img src="images/demo.png" alt="Example Apple Health sleep analysis figure" style="max-width: 100%; height: auto;">
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +6,10 @@
 </head>
 <body>
   <h1>Apple Health Sleep &amp; Physiology Analyzer – Description and Usage</h1>
+
+  <img src="demo.png"
+       alt="Example Apple Health sleep analysis figure"
+       style="max-width: 100%; height: auto;">
 
   <h2>Overview</h2>
   <p>
